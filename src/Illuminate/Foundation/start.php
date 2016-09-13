@@ -130,7 +130,7 @@ with($envVariables = new EnvironmentVariables(
 |
 */
 
-$app->instance('config', $config = new Config(
+$app->instance('config', $config = new \Boxgroove\AlbatrossLaravel\Adaptors\RepositoryAdaptor(
 
 	$app->getConfigLoader(), $env
 
